@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, minimum-scale=1.0, viewport-fit=cover, user-scalable=yes">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anime Mania</title>
+    <link href="styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <main>
+      <div class="container">
+
+        <header>
+          <h1 id="title" class="title-center">Subscribe to Anime Mania</h1>
+          <p id="description" class="description-center">Fill out the forum to be part of our anime community.</p>
+        </header>
+
+        <form id="survey-form">
+          <div class="form-group">
+
+            <label id="name-label" for="name">Name</label>
+            <input id="name" name="name" type="text" class="form-control" required placeholder="Enter Your Name">
+
+          </div>
+
+          <div class="form-group">
+            
+            <label id="email-label" for="email">Email</label>
+            <input id="email" name="email" type="email" class="form-control" required placeholder="Enter Your Email">
+
+          </div>
+
+          <div class="form-group">
+
+            <label id="number-label" for="number">Age (Optional)</label>
+            <input id="number" name="age" type="number" min="3" max="120" class="form-control" placeholder="Enter your age">
+
+          </div>
+
+          <div class="form-group">
+         
+            <p>What's your favorite anime?</p>
+            <select id="dropdown" name="dropdown" class="form-control" required>
+              <option disabled selected>Select an option</option>
+              <option value="attack_on_titan">Attack on Titan</option>
+              <option value="solo_leveling">Solo Leveling</option>
+              <option value="demon_slayer">Demon Slayer</option>
+              <option value="tokyo_ghoul">Tokyo Ghoul</option>
+              <option value="dragon_ball">Dragon Ball</option>
+              <option value="jujutsu_kaisen">Jujutsu Kaisen</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <p>What is your favorite anime genre?</p>
+
+            <label><input type="radio" name="genre" value="fantasy" class="input-radio" checked> Fantasy</label>
+            <label><input type="radio" name="genre" value="horror" class="input-radio"> Horror</label>
+            <label><input type="radio" name="genre" value="romantic" class="input-radio"> Romantic</label>
+            <label><input type="radio" name="genre" value="comedy" class="input-radio"> Comedy</label>
+
+          </div>
+
+          <div class="form-group">
+            <p>What is your favorite anime-related activity?</p>
+
+            <label><input type="checkbox" name="activity" value="watch" class="input-checkbox"> Watching anime</label>
+            <label><input type="checkbox" name="activity" value="cosplay" class="input-checkbox"> Do Cosplay</label>
+            <label><input type="checkbox" name="activity" value="read" class="input-checkbox"> Read manga</label>
+            <label><input type="checkbox" name="activity" value="discuss" class="input-checkbox"> Discuss with friends</label>
+          </div>
+
+          <div class="form-group">
+            <p>Do you have any other comments or suggestions about anime?</p>
+
+            <textarea name="comment" class="input-textarea" placeholder="Enter your comment here..."></textarea>
+          </div>
+
+          <div class="form-group">
+            <button id="submit" type="submit" class="input-submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

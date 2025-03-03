@@ -1,0 +1,112 @@
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #0A0A1D; 
+    color: #E5E5E5; 
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+form {
+    margin: 20px auto;
+    border-radius: 10px;
+    background: rgba(25, 25, 55, 0.85); 
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    backdrop-filter: blur(8px); 
+    text-align: center;
+}
+
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin: 10px auto;
+    text-align: left;
+    width: 100%;
+    max-width: 400px;
+    padding: 0;
+    font-size: 16px;
+}
+
+
+.form-control {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #333; 
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.1); 
+    color: #E5E5E5;  
+}
+
+
+select:focus {
+    outline: none;
+    border-color: #6A0DAD; 
+    box-shadow: 0 0 10px #6A0DAD;
+}
+
+select option {
+    background-color: rgba(25, 25, 55, 0.85);
+    color: #E5E5E5;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+}
+
+input, textarea, select {
+    padding: 10px;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #333; 
+    color: #E5E5E5; 
+    background-color: rgba(255, 255, 255, 0.1); 
+}
+
+input:focus, textarea:focus, select:focus {
+    outline: 2px solid #6A0DAD; 
+    background-color: rgba(255, 255, 255, 0.2); 
+}
+
+label {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.input-textarea {
+    width: 100%;
+    height: 100px;
+    resize: none;
+}
+
+.input-submit {
+    width: 100%;
+    padding: 10px;
+    background-color: #6A0DAD; 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin: 30px auto 20px auto;
+}
+
+.input-submit:hover {
+    background-color: #8B4E9B; 
+}
